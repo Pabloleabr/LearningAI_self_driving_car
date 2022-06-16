@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Driving Car</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/visualizer.js" defer></script>
+    <script src="js/network.js" defer></script>
+    <script src="js/sensor.js" defer></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/road.js" defer></script>
+    <script src="js/controls.js" defer></script>
+    <script src="js/car.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <canvas id="myCanvas"></canvas>
+    <div id="buttons">
+        <h3>Gen: #<span id="gen"></span></h3>
+        <p>
+            When all the cars die or stay still for to log the traits from the best will pass on with mutations and load the next generation
+        </p>
+        <button onclick="save()">Save</button>
+        <button onclick="load()">Reload</button>
+        <button onclick="nextGen()">Skip to Next Gen</button>
+        <button onclick="discard()">Discard</button>
+    </div>
+
+    <canvas id="networkCanvas"></canvas>
+
+</body>
+</html>
